@@ -15,6 +15,9 @@ namespace factorialFinder
             Console.WriteLine("Please enter a number to be calculated recursively");
             Console.WriteLine(RecursiveFactorial(int.Parse(Console.ReadLine())));
 
+            Console.WriteLine("Please enter a number to be calculated iteratively");
+            Console.WriteLine(IterativeFactorial(int.Parse(Console.ReadLine())));
+
             Console.ReadLine();
 
         }
@@ -26,6 +29,16 @@ namespace factorialFinder
                 return 2;
             }
             return n * RecursiveFactorial(n-1);
+        }
+
+        private static int IterativeFactorial(int n)
+        {
+            int output = 1;
+            for (int i = n; i > 1; i--)
+            {
+                output = output * i;
+            }
+            return output;
         }
     }
 }
