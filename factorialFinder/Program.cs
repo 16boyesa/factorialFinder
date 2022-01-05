@@ -10,6 +10,8 @@ namespace factorialFinder
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Welcome to factorial finder 2022");
+            Console.ReadLine();
         }
     }
 }
