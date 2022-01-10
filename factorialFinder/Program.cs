@@ -10,7 +10,12 @@ namespace factorialFinder
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to factorial finder 2022");
+            Console.WriteLine("Welcome to factorial finder 2022.");
+            Console.WriteLine("Type your name.");
+            if (Console.ReadLine() == "Will Roebuck")
+            { Console.Clear(); Environment.Exit(0); }
+            
+
 
             Console.WriteLine("Please enter a number to be calculated recursively");
             Console.WriteLine(RecursiveFactorial(int.Parse(Console.ReadLine())));
